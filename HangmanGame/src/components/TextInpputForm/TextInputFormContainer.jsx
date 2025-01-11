@@ -15,7 +15,8 @@ function TextInputFOrmContainer(){
         // console.log("Form Submitted",value);
         if(value){
             //If we had someithing valid in value then we want to go to the play page
-                navigate("/play");
+                // navigate(`/play/${value}`);
+                navigate(`/play`,{state:{wordSelected:value}});
         }
         
     }
